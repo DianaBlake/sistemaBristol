@@ -1,0 +1,79 @@
+.principal{
+    position: relative;
+}
+.imglogo{
+    position: absolute;
+    left:     150px;
+    margin:   -2%;
+    top:      0;
+    width:    160px; 
+    height:   auto;
+}
+
+.logouser{
+    position: absolute;
+    right:    23%;
+    margin:   3%;
+    font-size: 2em;
+}
+
+.logocarro{
+    position: absolute;
+    display: inline-block;
+    font-size: 1em;
+    margin-left: 23px;
+}
+
+.logolupa{
+    position: absolute;
+    display: inline-block;
+    margin-left: 69px;
+}
+
+
+.navegador{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 15px;
+    right:740px;
+    top:180%;
+}
+
+.navegador ul{
+    margin: 10px;
+    /*Se quitan las viñetas */
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.navegador footer-left{
+    justify-self: left;
+}
+
+.navegador ul li a{
+    margin:10px;
+    color:#5f6368;
+    font-size:x-large;
+    text-decoration: none; 
+}
+
+.linea-horizontal {
+    width: 2300%; /* Ancho de la línea */
+    border: 1px solid #000; 
+    padding-left: 0;
+    margin: 260%;
+    position: absolute;
+    right: -100%;
+}
+
+.contenedor-Principal{
+    position: absolute;
+    margin-top: 120px;
+    right: 290%;
+}
