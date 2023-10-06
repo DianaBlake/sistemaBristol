@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import Principal from './components/Principal';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <div id='app'>
-            <App/>
+            <Principal/>
         </div>
 );

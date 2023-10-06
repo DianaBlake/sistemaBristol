@@ -2,30 +2,22 @@
     position: relative;
 }
 .imglogo{
-    position: absolute;
-    left:     150px;
-    margin:   -2%;
-    top:      0;
     width:    160px; 
-    height:   auto;
+    justify-content: flex-start;
 }
 
-.logouser{
-    position: absolute;
+.logos{
     right:    23%;
     margin:   3%;
     font-size: 2em;
 }
 
 .logocarro{
-    position: absolute;
-    display: inline-block;
     font-size: 1em;
     margin-left: 23px;
 }
 
 .logolupa{
-    position: absolute;
     display: inline-block;
     margin-left: 69px;
 }
@@ -52,7 +44,7 @@
     padding-left: 0;
 }
 
-.navegador footer-left{
+.navegador footer{
     justify-self: left;
 }
 
@@ -63,7 +55,7 @@
     text-decoration: none; 
 }
 
-.linea-horizontal {
+.linea{
     width: 2300%; /* Ancho de la línea */
     border: 1px solid #000; 
     padding-left: 0;
@@ -72,7 +64,7 @@
     right: -100%;
 }
 
-.contenedor-Principal{
+.contenedor{
     position: absolute;
     margin-top: 120px;
     right: 290%;
