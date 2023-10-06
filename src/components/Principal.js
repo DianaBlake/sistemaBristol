@@ -9,7 +9,7 @@ function Principal() {
   return (
     <div className={principal.principal}>
       <div className={principal.logos}>
-        <img className={principal.imglogo} src={logo} />
+        <img className={principal.imglogo} src={logo} alt="Logo" />
         <CiUser color="#050404" />
         <BsCart3 color="#050404" />
         <CiSearch color="#050404" />
@@ -30,7 +30,7 @@ function Principal() {
       </div>
       <div class={principal.linea}></div>
       <div className={principal.contenedor}>
-        <img className={principal.img} src={inicioP} width={650} />
+        <img className={principal.img} src={inicioP} width={650} alt="Inicio"/>
       </div>
     </div>
   );
