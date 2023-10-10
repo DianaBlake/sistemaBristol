@@ -10,28 +10,29 @@ function Principal() {
   return (
     <div className={principal.principal}>
       <div className={principal.logos}>
-        <img className={principal.imglogo} src={logo} alt="Logo" />
-        <CiUser color="#050404" />
-        <BsCart3 color="#050404" />
-        <CiSearch color="#050404" />
+        <img className={principal.imglogo} src={logo} width={150} />
+        <div className={principal.iconos}>
+          <CiUser color="#050404" />
+          <BsCart3 color="#050404" />
+          <CiSearch color="#050404" />
+        </div>
       </div>
 
-      <div className={principal.estilosnav}>
-        <nav className={principal.navegador}>
-          <ul className={principal.footer}>
-            <li className={principal.lista2}>
-              <Link to="/">INICIO</Link>
-              <Link to="/ayuda">AYUDA</Link>
-              <Link to="/conjuntos">CONJUNTOS</Link>
-              <Link to="/bralettes">BRALETTES</Link>
-              <Link to="/novedades">NOVEDADES</Link>
-            </li>
-          </ul>
-        </nav>
+      <div className={principal.menu}>
+        <ul className={principal.lista}>
+          <li className={principal.lista2}>
+            <a href="/">INICIO</a>
+            <a href="/">AYUDA</a>
+            <a href="/">CONJUNTOS</a>
+            <a href="/">BRALETTES</a>
+            <a href="/">NOVEDADES</a>
+          </li>
+        </ul>
+        <div class={principal.linea}></div>
       </div>
-      <div class={principal.linea}></div>
+
       <div className={principal.contenedor}>
-        <img className={principal.img} src={inicioP} width={650} alt="Inicio" />
+         <img className={principal.img} src={inicioP} width={650} />
       </div>
     </div>
   );
