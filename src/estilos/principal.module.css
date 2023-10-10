@@ -15,33 +15,26 @@
 .iconos{
     display: flex;
     font-size: 2em;
-    gap: 60px;
+    gap: 3vw;
 }
 
 .menu{
-    
     padding-inline:15vw;
-}
-
-.menu ul{
-    margin: 25px;
     /*Se quitan las viñetas */
-    list-style: none;
     display: flex;
-    padding-left: 0;
+    font-size:x-large;
+    justify-content: center;
+    gap: 3vw;
 }
 
-.menu ul li a{
-    color:#5f6368;
-    font-size:x-large;
+.menu a{
     text-decoration: none;
-    justify-self: right;
-    margin-right: 55px;
+    color:#5f6368;
 }
 
 .linea{
     border: 1px solid #000; 
-    width:100%;
+    width:64%;
 }
 
 .contenedor{
@@ -52,5 +45,6 @@
 .img{   
     padding-inline:8vw;
     justify-content: center;
+    width: 50vw;
 }
 

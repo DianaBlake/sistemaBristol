@@ -17,22 +17,19 @@ function Principal() {
           <CiSearch color="#050404" />
         </div>
       </div>
-
+      
       <div className={principal.menu}>
-        <ul className={principal.lista}>
-          <li className={principal.lista2}>
             <a href="/">INICIO</a>
             <a href="/">AYUDA</a>
             <a href="/">CONJUNTOS</a>
             <a href="/">BRALETTES</a>
             <a href="/">NOVEDADES</a>
-          </li>
-        </ul>
-        <div class={principal.linea}></div>
       </div>
 
+      <hr className={principal.linea}/> 
+
       <div className={principal.contenedor}>
-         <img className={principal.img} src={inicioP} width={650} />
+         <img className={principal.img} src={inicioP} />
       </div>
     </div>
   );
