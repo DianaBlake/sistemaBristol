@@ -2,8 +2,8 @@ Proyecto web para marca de ropa Bristol
 # INSTRUCCIONES DE INICIO
 
 ## Clonar el repositorio mediante HTTPS
-1.- En consola escribir el comando `git clone https://github.com/DianaBlake/sistemaBristol.git`, esto creara la carpeta sistemaBristol.
-2.- Ingresar dentro de la carpeta con `cd sistemaBristol`
+1. En consola escribir el comando `git clone https://github.com/DianaBlake/sistemaBristol.git`, esto creara la carpeta sistemaBristol.
+2. Ingresar dentro de la carpeta con `cd sistemaBristol`
 
 ## Descargar las dependencias
 Para poder ejecutar el proyecto se necesita descargar las dependencias que se ocupan, para esto ejecutarán el siguiente comando `npm install`, esto creara la carpeta **node_modules**. 
@@ -11,9 +11,9 @@ El comando para ejecutar el proyecto es: `npm start`
 
 ## Crear su rama localmente
 Necesitamos que creen su rama para que agreguen lo que les tocó, una vez hayan terminado su parte se revisará y se mezclará con la rama main en caso de que no haya mas correcciones.
-1.- Para crear su rama localmente ejecuten el siguiente comando `git branch RamaNombre`.
-2.- Verifiquen que su rama se haya creado correctamente con `git branch`. Se mostrara la lista de ramas locales y aparecerá un asterisco en el nombre de la rama donde se encuentran actualmente.
-3.- Cambien de rama usando `git checkout RamaNombre` y nuevamente ejecuten `git branch`. Revisen que el asterisco se encuentre en el nombre de su rama para comenzar a trabajar.
+1. Para crear su rama localmente ejecuten el siguiente comando `git branch RamaNombre`.
+2. Verifiquen que su rama se haya creado correctamente con `git branch`. Se mostrara la lista de ramas locales y aparecerá un asterisco en el nombre de la rama donde se encuentran actualmente.
+3. Cambien de rama usando `git checkout RamaNombre` y nuevamente ejecuten `git branch`. Revisen que el asterisco se encuentre en el nombre de su rama para comenzar a trabajar.
 
 ## Trabajen en su rama
 Realicen la parte que les tocó en su respectiva rama, por ahora solamente estarán trabajando en el archivo [Ayuda.js](src/pages/Ayuda.js). En este archivo se encuentran los comentarios de donde deben de comenzar a escribir codigo (Dependiendo de que les haya tocado).
