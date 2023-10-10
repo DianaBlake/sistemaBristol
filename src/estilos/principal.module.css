@@ -1,71 +1,56 @@
 .principal{
-    position: relative;
-}
-.imglogo{
-    width:    160px; 
-    justify-content: flex-start;
-}
-
+    margin: 0;  
+    padding: 0;   
+  }
+  
 .logos{
-    right:    23%;
-    margin:   3%;
-    font-size: 2em;
-}
-
-.logocarro{
-    font-size: 1em;
-    margin-left: 23px;
-}
-
-.logolupa{
-    display: inline-block;
-    margin-left: 69px;
-}
-
-
-.navegador{
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-inline:10vw;
     align-items: center;
-    font-size: 15px;
-    right:740px;
-    top:180%;
+    margin-bottom: -30px;
 }
 
-.navegador ul{
-    margin: 10px;
+.iconos{
+    display: flex;
+    font-size: 2em;
+    gap: 60px;
+}
+
+.menu{
+    
+    padding-inline:15vw;
+}
+
+.menu ul{
+    margin: 25px;
     /*Se quitan las viñetas */
     list-style: none;
     display: flex;
     padding-left: 0;
 }
 
-.navegador footer{
-    justify-self: left;
-}
-
-.navegador ul li a{
-    margin:10px;
+.menu ul li a{
     color:#5f6368;
     font-size:x-large;
-    text-decoration: none; 
+    text-decoration: none;
+    justify-self: right;
+    margin-right: 55px;
 }
 
 .linea{
-    width: 2300%; /* Ancho de la línea */
     border: 1px solid #000; 
-    padding-left: 0;
-    margin: 260%;
-    position: absolute;
-    right: -100%;
+    width:100%;
 }
 
 .contenedor{
-    position: absolute;
-    margin-top: 120px;
-    right: 290%;
+    margin-top: 2%;
+    padding-inline:15vw;
 }
+
+.img{   
+    padding-inline:8vw;
+    justify-content: center;
+}
+
