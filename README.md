@@ -78,6 +78,6 @@ render(
 )
 ```
 
-Por el momento solo trabajaran en la clase [Ayuda.js](src/pages/Ayuda.js). Es por eso que no sera necesario que creen otra hoja de estilos, sigan agregando estilos dentro de [ayuda.module.css](src/estilos/principal.module.css) con el formato y la forma de usarlo que ya se explico anteriormente.
+Por el momento solo trabajaran en la clase [Ayuda.js](src/pages/Ayuda.js). Es por eso que no sera necesario que creen otra hoja de estilos, sigan agregando estilos dentro de [ayuda.module.css](src/estilos/ayuda.module.css) con el formato y la forma de usarlo que ya se explico anteriormente.
 
 
