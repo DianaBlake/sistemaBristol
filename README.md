@@ -30,15 +30,15 @@ Para subir su rama verifiquen que no tengan commits pendientes en su codigo y ej
 Para todo el proyecto se estan usando los [Iconos de React](https://react-icons.github.io/react-icons), si ocupas algun icono tendras que buscarlo en esa pagina.
 
 1. Importar el icono a tu codigo:
-   `import { FaBeer } from 'react-icons/fa';`
-   **FaBeer**: Nombre completo del icono
-   **react-icons/fa**: Nombre de la coleccion a la que pertenece el icono
+   `import { FaBeer } from 'react-icons/fa';`.
+   **FaBeer**: Nombre completo del icono.
+   **react-icons/fa**: Nombre de la coleccion a la que pertenece el icono.
    
-   En este caso el nombre completo del icono es **FaBeer**, las dos primeras letras del nombre representan la coleccion del icono, de esta manera sera mas facil identificar si tienes iconos de la misma coleccion
+   En este caso el nombre completo del icono es **FaBeer**, las dos primeras letras del nombre representan la coleccion del icono, de esta manera sera mas facil identificar si tienes iconos de la misma coleccion.
    
    *Nota*
-   *En caso de ocupar iconos de diferentes colecciones tendras que hacer los imports necesarios por cada coleccion
-   *Si usas varios iconos pero de la misma coleccion, basta con poner una coma dentro de las llaves del import para agregar el otro icono
+   * En caso de ocupar iconos de diferentes colecciones tendras que hacer los imports necesarios por cada coleccion.
+   * Si usas varios iconos pero de la misma coleccion, basta con poner una coma dentro de las llaves del import para agregar el otro icono.
 
 2. Usar el icono en el codigo:
    Para usar el icono basta con `<NombredelIcono/>` en donde se quiera colocar. Ejemplo `<FaBeer/>`
