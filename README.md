@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+Proyecto web para marca de ropa Bristol
+# INSTRUCCIONES DE INICIO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Clonar el repositorio mediante HTTPS
+1.- En consola escribir el comando `git clone https://github.com/DianaBlake/sistemaBristol.git`, esto creara la carpeta sistemaBristol.
+2.- Ingresar dentro de la carpeta con `cd sistemaBristol`
 
-## Available Scripts
+## Descargar las dependencias
+Para poder ejecutar el proyecto se necesita descargar las dependencias que se ocupan, para esto ejecutarán el siguiente comando `npm install`, esto creara la carpeta **node_modules**. 
+El comando para ejecutar el proyecto es: `npm start`
 
-In the project directory, you can run:
+## Crear su rama localmente
+Necesitamos que creen su rama para que agreguen lo que les tocó, una vez hayan terminado su parte se revisará y se mezclará con la rama main en caso de que no haya mas correcciones.
+1.- Para crear su rama localmente ejecuten el siguiente comando `git branch RamaNombre`.
+2.- Verifiquen que su rama se haya creado correctamente con `git branch`. Se mostrara la lista de ramas locales y aparecerá un asterisco en el nombre de la rama donde se encuentran actualmente.
+3.- Cambien de rama usando `git checkout RamaNombre` y nuevamente ejecuten `git branch`. Revisen que el asterisco se encuentre en el nombre de su rama para comenzar a trabajar.
 
-### `npm start`
+## Trabajen en su rama
+Realicen la parte que les tocó en su respectiva rama, por ahora solamente estarán trabajando en el archivo [Ayuda.js](src/pages/Ayuda.js). En este archivo se encuentran los comentarios de donde deben de comenzar a escribir codigo (Dependiendo de que les haya tocado).
+Recuerden que pueden ayudarse de `git add .` y `git commit -m "comentario de sus cambios"` en ese orden para guardar sus avances localmente y llevar un registro de sus avances.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Subir su rama al repositorio
+Cuando terminen su parte de forma local favor de avisar para que los agreguemos como colaboradores en este repositorio y puedan subir toda su rama con sus cambios y asi podamos revisarla.
+Para subir su rama verifiquen que no tengan commits pendientes en su codigo y ejecuten `git push origin RamaNombre`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# ACLARACIONES PARA EL DESARROLLO DEL PROYECTO
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Iconos
+Para todo el proyecto se estan usando los [Iconos de React](https://react-icons.github.io/react-icons), si ocupas algun icono tendras que buscarlo en esa pagina.
 
-### `npm run build`
+1. Importar el icono a tu codigo:
+   `import { FaBeer } from 'react-icons/fa';`
+   **FaBeer**: Nombre completo del icono
+   **react-icons/fa**: Nombre de la coleccion a la que pertenece el icono
+   
+   En este caso el nombre completo del icono es **FaBeer**, las dos primeras letras del nombre representan la coleccion del icono, de esta manera sera mas facil identificar si tienes iconos de la misma coleccion
+   
+   *Nota*
+   *En caso de ocupar iconos de diferentes colecciones tendras que hacer los imports necesarios por cada coleccion
+   *Si usas varios iconos pero de la misma coleccion, basta con poner una coma dentro de las llaves del import para agregar el otro icono
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Usar el icono en el codigo:
+   Para usar el icono basta con `<NombredelIcono/>` en donde se quiera colocar. Ejemplo `<FaBeer/>`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Ejemplo de como se usaria:
+`import { FaBeer } from 'react-icons/fa';
+class Widget extends React.Component {
+  render() {
+    return <h3> Icono de cerveza: <FaBeer /></h3>
+  }
+}`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Manejo de estilos
+### Nombre del archivo CSS
+En react se utiliza un manejo de estilos mediante modulos, las clases CSS no se usan como normalmente se usan en HTML puro. Es por eso que al crear un archivo de estilo se nombra de la siguiente manera `estilo.module.css`, agregando ".module.css" despues del nombre del archivo.
+### Import del archivo CSS
+Para poder usar los estilos que se encuentran en nuestro archivo CSS tenemos que importarlo de la siguiente manera `import estilos from 'estilo.module.css'`, siendo "estilos" la variable que usaremos para asignar estilo al elemento deseado
+### Crear los estilos en el archivo CSS
+Para crear estilos en el archivo CSS tendremos que crearlos mediante un punto y el nombre del estilo. Ejemplo:
+`.TextoGrandeCentrado{
+  font-size: 10vh;
+  text-align: center;
+}`
+### Usar el estilo en el elemento deseado
+Dentro de la etiqueta de cualquier elemento colocaremos el atributo "className"  con la variable del import y el nombre del estilo. Ejemplo de uso:
+```
+render(
+  <h1 className={estilos.TextoGrandeCentrado}>
+    Envios
+  </h1>
+)
+```
+   
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
