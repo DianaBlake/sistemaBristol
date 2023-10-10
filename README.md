@@ -44,12 +44,14 @@ Para todo el proyecto se estan usando los [Iconos de React](https://react-icons.
    Para usar el icono basta con `<NombredelIcono/>` en donde se quiera colocar. Ejemplo `<FaBeer/>`
 
 ### Ejemplo de como se usaria:
-`import { FaBeer } from 'react-icons/fa';
+```
+import { FaBeer } from 'react-icons/fa';
 class Widget extends React.Component {
   render() {
     return <h3> Icono de cerveza: <FaBeer /></h3>
   }
-}`
+}
+```
 
 
 
@@ -60,10 +62,12 @@ En react se utiliza un manejo de estilos mediante modulos, las clases CSS no se 
 Para poder usar los estilos que se encuentran en nuestro archivo CSS tenemos que importarlo de la siguiente manera `import estilos from 'estilo.module.css'`, siendo "estilos" la variable que usaremos para asignar estilo al elemento deseado
 ### Crear los estilos en el archivo CSS
 Para crear estilos en el archivo CSS tendremos que crearlos mediante un punto y el nombre del estilo. Ejemplo:
-`.TextoGrandeCentrado{
+```
+.TextoGrandeCentrado{
   font-size: 10vh;
   text-align: center;
-}`
+}
+```
 ### Usar el estilo en el elemento deseado
 Dentro de la etiqueta de cualquier elemento colocaremos el atributo "className"  con la variable del import y el nombre del estilo. Ejemplo de uso:
 ```
