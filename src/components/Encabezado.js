@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../images/logo.jpg";
-import inicioP from "../images/inicioP.jpg";
-import { CiUser, CiSearch } from "react-icons/ci";
-import principal from "../estilos/principal.module.css";
-import { BsCart3 } from "react-icons/bs";
 
-function Principal() {
+import { BsCart3 } from "react-icons/bs";
+import { CiUser, CiSearch } from "react-icons/ci";
+import logo from "../images/logo.jpg";
+import principal from "../estilos/principal.module.css";
+
+function Encabezado() {
   return (
     <div className={principal.principal}>
       <div className={principal.logos}>
@@ -16,21 +16,18 @@ function Principal() {
           <CiSearch color="#050404" />
         </div>
       </div>
-      
+
       <div className={principal.menu}>
-            <a href="/">INICIO</a>
-            <a href="/">AYUDA</a>
-            <a href="/">CONJUNTOS</a>
-            <a href="/">BRALETTES</a>
-            <a href="/">NOVEDADES</a>
+        <a href="/">INICIO</a>
+        <a href="/">AYUDA</a>
+        <a href="/">CONJUNTOS</a>
+        <a href="/">BRALETTES</a>
+        <a href="/">NOVEDADES</a>
       </div>
 
-      <hr className={principal.linea}/> 
-
-      <div className={principal.contenedor}>
-         <img className={principal.img} src={inicioP} />
-      </div>
+      <hr className={principal.linea} />
     </div>
   );
 }
-export default Principal;
+
+export default Encabezado;
