@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Principal from './components/Principal';
+import Principal from './pages/Principal';
 import Ayuda from './pages/Ayuda';
 import Conjuntos from './pages/Conjuntos';
 import Bralettes from './pages/Bralettes';
