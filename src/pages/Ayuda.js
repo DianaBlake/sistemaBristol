@@ -3,18 +3,10 @@ import estilo from '../estilos/ayuda.module.css'
 import Encabezado from '../components/Encabezado'
 import Footer from '../components/Footer'
 
-const SeccionEnvios = () => {
+const SeccionTiendas = () => {
   return (
     <div>
-      <h1>Seccion metodos de envio</h1>
-      {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
-    </div>
-  )
-}
-const SeccionPagos = () => {
-  return (
-    <div>
-      <h1>Seccion metodos de pago</h1>
+      <h1>Seccion tiendas fisicas</h1>
       {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
     </div>
   )
@@ -27,18 +19,26 @@ const SeccionTallas = () => {
     </div>
   )
 }
-const SeccionTiendas = () => {
+const SeccionEnvios = () => {
   return (
     <div>
-      <h1>Seccion tiendas fisicas</h1>
+      <h1>Seccion metodos de envio y pagos</h1>
       {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
     </div>
   )
 }
-const SeccionPreguntas = () => {
+const SeccionDevoluciones = () => {
   return (
     <div>
-      <h1>Seccion preguntas frecuentes</h1>
+      <h1>Seccion de devoluciones</h1>
+      {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
+    </div>
+  )
+}
+const SeccionPersonalizados = () => {
+  return (
+    <div>
+      <h1>Seccion personalizados</h1>
       {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
     </div>
   )
@@ -50,15 +50,15 @@ function Ayuda() {
   const cambiarSeccion = () => {
     switch (seccion) {
       case 0:
-        return <SeccionEnvios />
-      case 1:
-        return <SeccionPagos />
-      case 2:
-        return <SeccionTallas />
-      case 3:
         return <SeccionTiendas />
+      case 1:
+        return <SeccionTallas />
+      case 2:
+        return <SeccionEnvios />
+      case 3:
+        return <SeccionDevoluciones />
       case 4:
-        return <SeccionPreguntas />
+        return <SeccionPersonalizados />
       default:
         break
     }
@@ -89,8 +89,8 @@ function Ayuda() {
 
   return (
     <>
-    <Encabezado/>
-    <p className={estilo.Titulo}>PREGUNTAS FRECUENTES</p>
+      <Encabezado />
+      <p className={estilo.Titulo}>PREGUNTAS FRECUENTES</p>
       <EncabezadoAyuda />
       <div className={estilo.SeccionArea}>
         {cambiarSeccion()}
