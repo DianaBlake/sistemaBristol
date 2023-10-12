@@ -68,19 +68,19 @@ function Ayuda() {
     return (
       <div className={estilo.ayuda}>
         <div className={estilo.secAyuda} onClick={() => { setSeccion(0) }}>
-          <h2>Envios</h2>
+          <p>TIENDAS FÍSICAS</p>
         </div>
         <div className={estilo.secAyuda} onClick={() => { setSeccion(1) }}>
-          <h2>Metodos de pago</h2>
+          <p>ARTICULOS Y TALLAS</p>
         </div>
         <div className={estilo.secAyuda} onClick={() => { setSeccion(2) }}>
-          <h2>Tallas y medidas</h2>
+          <p>PAGOS Y ENVÍOS</p>
         </div>
         <div className={estilo.secAyuda} onClick={() => { setSeccion(3) }}>
-          <h2>Tiendas fisicas</h2>
+          <p>DEVOLUCIONES</p>
         </div>
         <div className={estilo.secAyuda} onClick={() => { setSeccion(4) }}>
-          <h2>Preguntas frecuentes</h2>
+          <p>PERSONALIZADOS</p>
         </div>
       </div>
     )
@@ -90,7 +90,7 @@ function Ayuda() {
   return (
     <>
     <Encabezado/>
-    <h1 className={estilo.Titulo}>Preguntas frecuentes</h1>
+    <p className={estilo.Titulo}>PREGUNTAS FRECUENTES</p>
       <EncabezadoAyuda />
       <div className={estilo.SeccionArea}>
         {cambiarSeccion()}
