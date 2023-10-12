@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
 .ayuda{
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -7,10 +10,11 @@
     margin-block: 30px;
 }
 .secAyuda{
+    font-size: 1.7vh;
     margin: 0px;
     border-style: solid;
     border-color: black;
-    border-width: 2px;
+    border-width: 1px;
     padding-inline: 40px;
     text-align: center;
 }
@@ -23,10 +27,11 @@
     margin-inline: 10vw;
     border-style: solid;
     border-color: black;
-    border-width: 2px;
+    border-width: 1px;
     text-align: center;
 }
 .Titulo{
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 6vh;
     text-align: center;
 }
