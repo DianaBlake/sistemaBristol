@@ -1,5 +1,4 @@
 import React from "react";
-
 import { BsCart3 } from "react-icons/bs";
 import { CiUser, CiSearch } from "react-icons/ci";
 import logo from "../images/logo.jpg";
@@ -19,7 +18,7 @@ function Encabezado() {
 
       <div className={principal.menu}>
         <a href="/">INICIO</a>
-        <a href="/">AYUDA</a>
+        <a href="/ayuda">AYUDA</a>
         <a href="/">CONJUNTOS</a>
         <a href="/">BRALETTES</a>
         <a href="/">NOVEDADES</a>

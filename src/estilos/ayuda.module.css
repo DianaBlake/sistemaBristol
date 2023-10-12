@@ -20,7 +20,13 @@
     color: white;
 }
 .SeccionArea{
+    margin-inline: 10vw;
     border-style: solid;
     border-color: black;
     border-width: 2px;
+    text-align: center;
+}
+.Titulo{
+    font-size: 6vh;
+    text-align: center;
 }

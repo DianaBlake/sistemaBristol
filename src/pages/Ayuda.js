@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import estilo from '../estilos/ayuda.module.css'
+import Encabezado from '../components/Encabezado'
+import Footer from '../components/Footer'
 
 const SeccionEnvios = () => {
   return (
     <div>
       <h1>Seccion metodos de envio</h1>
+      {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
     </div>
   )
 }
@@ -12,6 +15,7 @@ const SeccionPagos = () => {
   return (
     <div>
       <h1>Seccion metodos de pago</h1>
+      {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
     </div>
   )
 }
@@ -19,6 +23,7 @@ const SeccionTallas = () => {
   return (
     <div>
       <h1>Seccion tallas y medidas</h1>
+      {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
     </div>
   )
 }
@@ -26,6 +31,7 @@ const SeccionTiendas = () => {
   return (
     <div>
       <h1>Seccion tiendas fisicas</h1>
+      {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
     </div>
   )
 }
@@ -33,6 +39,7 @@ const SeccionPreguntas = () => {
   return (
     <div>
       <h1>Seccion preguntas frecuentes</h1>
+      {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
     </div>
   )
 }
@@ -57,7 +64,7 @@ function Ayuda() {
     }
   }
 
-  const Encabezado = () => {
+  const EncabezadoAyuda = () => {
     return (
       <div className={estilo.ayuda}>
         <div className={estilo.secAyuda} onClick={() => { setSeccion(0) }}>
@@ -82,10 +89,13 @@ function Ayuda() {
 
   return (
     <>
-      <Encabezado />
+    <Encabezado/>
+    <h1 className={estilo.Titulo}>Preguntas frecuentes</h1>
+      <EncabezadoAyuda />
       <div className={estilo.SeccionArea}>
         {cambiarSeccion()}
       </div>
+      {/* <Footer/> */}
     </>
   )
 }
