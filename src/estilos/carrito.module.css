@@ -101,6 +101,7 @@
 .total{
     display: flex;
     justify-content:space-between;
+    padding-inline: 30px;
 }
 .botonPago{
     font-size: x-large;
