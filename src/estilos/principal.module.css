@@ -17,6 +17,14 @@
     font-size: 2em;
     gap: 3vw;
 }
+.iconoX{
+    color:#050404;
+    padding: 5px;
+}
+.iconoX:hover{
+    cursor: pointer;
+    animation: sacudir 1s linear infinite;
+}
 
 .menu{
     padding-inline:15vw;
@@ -48,3 +56,23 @@
     width: 50vw;
 }
 
+@keyframes sacudir {
+    0% {
+        transform: none;
+      }
+    
+      10%,
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: rotate(-5deg);
+      }
+    
+      20%,
+      40%,
+      60%,
+      80% {
+        transform: rotate(5deg);
+      }
+  }

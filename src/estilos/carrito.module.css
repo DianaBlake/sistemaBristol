@@ -21,76 +21,6 @@
 .contentCar {
     display: flex;
     flex-direction: column;
-    overflow: auto;
-    height:70%;
-}
-
-.tablaCarrito {
-    width: 100%;
-    table-layout:auto;
-    border-collapse: separate;
-    border-spacing: 0px 10px;
-}
-.tablaCabeza{
-    position: sticky;
-    top: 0;
-}
-.tablaCarrito td {
-    padding: 20px;
-}
-.tablaCarrito th {
-    padding: 7px;
-}
-.tablaCarrito tr {
-    background-color: white;
-    margin: 30px;
-}
-
-.tablaEncabezado {
-    background-color: white;
-}
-
-.celdaProduct {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap:wrap;
-    gap: 20px;
-}
-
-.imgProduct {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    object-position: center;
-}
-
-.nombreP {
-    font-size: x-large;
-    margin: 0;
-}
-
-.cateP {
-    margin: 0;
-
-}
-
-.celdaCantidad {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 10px;
-}
-
-.butonQuanty {
-    background-color: rgb(244, 244, 244);
-    ;
-    border-style: none;
-}
-
-.celdaPrecio {
-    display: flex;
-    justify-content: center;
 }
 .pieCar{
     display: flex;
@@ -104,6 +34,9 @@
     padding-inline: 30px;
 }
 .botonPago{
+    color: #050404;
+    text-align: center;
+    text-decoration: none;
     font-size: x-large;
     padding: 15px;
     border-style: solid;
@@ -113,6 +46,15 @@
 .botonPago:hover{
     background-color: black;
     color: white;
+}
+
+.iconoX{
+    color:#050404;
+    padding: 5px;
+}
+.iconoX:hover{
+    cursor: pointer;
+    animation: sacudir 1s linear infinite;
 }
 
 
@@ -125,3 +67,24 @@
         padding: 10px 40px;
     }
 }
+
+@keyframes sacudir {
+    0% {
+        transform: none;
+      }
+    
+      10%,
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: rotate(-5deg);
+      }
+    
+      20%,
+      40%,
+      60%,
+      80% {
+        transform: rotate(5deg);
+      }
+  }
