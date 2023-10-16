@@ -34,18 +34,17 @@
     padding-inline: 30px;
 }
 .botonPago{
-    color: #050404;
+    color: white;
     text-align: center;
     text-decoration: none;
     font-size: x-large;
     padding: 15px;
     border-style: solid;
     border-width: 1px;
-    background-color: white;
+    background-color: #050404;
 }
 .botonPago:hover{
-    background-color: black;
-    color: white;
+    cursor: pointer;
 }
 
 .iconoX{

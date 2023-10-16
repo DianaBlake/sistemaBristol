@@ -3,6 +3,43 @@
     font-size: 6vh;
     text-align: center;
 }
+.tituloSecundario{
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 4vh;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+.seccionBolsa{
+    width: 50%;
+}
+.seccionPago{
+    display: flex;
+    flex-direction: column;
+}
+.seccionPagoInfo{
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.textoNormalDER{
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 2vh;
+    text-align: right;
+    margin-block: 1px;
+}
+.textoNormalIZQ{
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 2vh;
+    margin-block: 1px;
+}
+.areaCompra{
+    display: flex;
+    justify-content: center ;
+    flex-wrap: wrap;
+    gap: 5%;
+}
 .areaEncabezado{
     font-family: 'Zen Kaku Gothic New', sans-serif;
     display: grid;
@@ -79,4 +116,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.botonPago{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #050404;
+}
+.botonPago:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .seccionBolsa{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .areaCompra{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        flex-wrap: wrap;
+    }
 }
