@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
+
 .ayuda{
     font-family: 'Zen Kaku Gothic New', sans-serif;
     display: flex;
@@ -34,4 +35,69 @@
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 6vh;
     text-align: center;
+}
+
+/* Estilos Pagos y Envios */
+
+.contenedorAcordeon{
+    width: 40%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+.contenedorAcordeon h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+.acordeon{
+    background: #fff;
+}
+.acordeon label{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background: #FFFFFF;
+    color: #393E46;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+    border: 1px solid #393E46;
+   
+}
+.acordeon label:hover{
+    background: #FEFBF3;
+}
+.acordeon .contenidoAcordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btnAcordeon:checked ~ .contenidoAcordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btnAcordeon{
+    display: none;
+}
+
+img{
+    width: 60px;
+    height: 35px;
+    margin: 10px;
+}
+
+.imgQr{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.clase-Pagos{
+    text-align: center;
+     text-align: center;
+    font-size: 25px;
+    margin-bottom: 35px;
 }
