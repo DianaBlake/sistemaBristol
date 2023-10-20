@@ -35,3 +35,25 @@
     font-size: 6vh;
     text-align: center;
 }
+
+
+.container {
+    display: flex; 
+    justify-content: center;
+    gap: 10px; 
+    padding-block: 60px;
+  }
+  
+  .imagen {
+    width: 50vh;
+    margin: 2px ;
+  }
+  
+  .contenido {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+

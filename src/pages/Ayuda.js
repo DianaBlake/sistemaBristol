@@ -2,13 +2,35 @@ import React, { useState } from 'react'
 import estilo from '../estilos/ayuda.module.css'
 import Encabezado from '../components/Encabezado'
 import Footer from '../components/Footer'
+import imagen from '../images/TiendasFisicas.png'
 
 const SeccionTiendas = () => {
   return (
-    <div>
-      <h1>Seccion tiendas fisicas</h1>
+    <> <h1>Sección tiendas fisicas</h1>
+    <div className={estilo.container}>
+     
+    <img src={imagen} alt="Imagen" className={estilo.imagen}></img>
+    
+     
+      <div  className={estilo.contenido}>
+     
+            <h1>BIENVENIDOS</h1>
+            
+            <p className ={estilo.parrafo}>Por el momento no cuenta con tiendas<br></br>
+            fisicas. Las compras únicamente se pueden <br></br>
+            realzar de manera virtual. Estamos trabajando<br></br>
+            para poder abrir nuestra primer sucursal<br></br>
+            y esperamos pronto brindar un servicio<br></br>
+            en un establecimiento.<br></br>
+            ¡Gracias por tu comprensión y apoyo!
+            </p>
+            
+        </div>
+      
+
       {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
     </div>
+    </>
   )
 }
 const SeccionTallas = () => {
