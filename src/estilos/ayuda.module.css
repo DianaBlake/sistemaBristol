@@ -35,3 +35,82 @@
     font-size: 6vh;
     text-align: center;
 }
+.contenedorHeader{
+    display: flex;
+    }
+
+ /*Seccion de tallas*/   
+
+.headerTitulos{
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 200px;
+    padding-top: 80px;
+    
+}
+.img{
+    height: 60px;
+    overflow:hidden;
+    padding-left: 250px;
+    padding-top: 100px;
+}
+.subtitulos {
+
+        display: flex;
+        flex-direction: row; 
+        
+    }
+
+ .subtitulo {
+         font-family: 'Zen Kaku Gothic New', sans-serif;
+        text-align: center;
+        font-size: 30px;
+        padding-left: 250px;
+        cursor: pointer;
+    }
+
+.seleccionable:hover {
+           font-family: 'Zen Kaku Gothic New', sans-serif;
+            font-weight: bold;
+            text-decoration: underline;
+        } 
+
+    .tablaEscondida {
+            display: none; /* Oculta inicialmente las tablas */
+        }
+    
+    .tablaMostrada{
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+        border-collapse: collapse;
+        border: 2px solid #000000;
+        margin-top: 50px;
+        margin-left: 285px;
+        margin-bottom: 80px;
+    }
+    .tall {
+        border: 2px solid #000;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 55px;
+        padding-right: 55px;
+        font-size: 25px; 
+    }
+
+    .anch{
+        border: 2px solid #000;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 85px;
+        padding-right: 85px;
+        font-size: 25px; /* Reduce el tamaño de fuente en las celdas de encabezado */
+    }
+
+    .lar {
+        border: 2px solid #000;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 105px;
+        padding-right: 105px;
+        font-size: 25px; /* Reduce el tamaño de fuente en las celdas de encabezado */
+    }

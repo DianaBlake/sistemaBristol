@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import estilo from '../estilos/ayuda.module.css'
 import Encabezado from '../components/Encabezado'
 import Footer from '../components/Footer'
-
+import regla from "../images/regla.PNG";
 const SeccionTiendas = () => {
   return (
     <div>
@@ -12,13 +12,83 @@ const SeccionTiendas = () => {
   )
 }
 const SeccionTallas = () => {
+  const [tablaSeleccionada, setTablaSeleccionada] = useState(''); // Estado para rastrear la tabla seleccionada
+
+  const mostrarTabla = (seleccion) => {
+    setTablaSeleccionada(seleccion);
+  };
+
   return (
     <div>
-      <h1>Seccion tallas y medidas</h1>
-      {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
+      <header className={estilo.contenedorHeader}>
+        <img className={estilo.img} src={regla} />
+            <div className={estilo.headerTitulos}>
+                <h1>GUÍA DE TALLAS</h1>
+            </div>
+        </header>
+        <div className={estilo.subtitulos}>
+            <div className={estilo.subtitulo}>
+            <p id="busto" className={tablaSeleccionada === 'busto' ? estilo.seleccionableSeleccionado : estilo.seleccionable} onClick={() => mostrarTabla('busto')}>
+            MEDIDAS DE BUSTO
+          </p>
+            </div>
+            <div className={estilo.subtitulo}>
+            <p id="espalda" className={tablaSeleccionada === 'espalda' ? estilo.seleccionableSeleccionado : estilo.seleccionable} onClick={() => mostrarTabla('espalda')}>
+            MEDIDAS DE ESPALDA
+          </p>
+            </div>
+        </div>
+        <table id="tabla-busto" className={tablaSeleccionada === 'busto' ? estilo.tablaMostrada : estilo.tablaEscondida}>
+        <tr>
+            <th  className={estilo.tall}>TALLAS</th>
+            <th  className={estilo.anch}>ANCHO</th>
+            <th  className={estilo.lar}>LARGO</th>
+        </tr>
+        <tr>
+            <td className={estilo.tall}></td>
+            <td className={estilo.anch}></td>
+            <td className={estilo.lar}></td>
+        </tr>
+        <tr>
+            <td className={estilo.tall}></td>
+            <td className={estilo.anch}></td>
+            <td className={estilo.lar}></td>
+        </tr>
+        <tr>
+            <td className={estilo.tall}></td>
+            <td className={estilo.anch}></td>
+            <td className={estilo.lar}></td>
+        </tr>
+    </table>
+
+    <table id="tabla-espalda" className={tablaSeleccionada === 'espalda' ? estilo.tablaMostrada : estilo.tablaEscondida}>
+        <tr>
+            <th  className={estilo.tall}>TALLAS</th>
+            <th  className={estilo.anch}>ANCHO</th>
+            <th  className={estilo.lar}>LARGO</th>
+        </tr>
+        <tr>
+            <td className={estilo.tall}></td>
+            <td className={estilo.anch}></td>
+            <td className={estilo.lar}></td>
+        </tr>
+        <tr>
+            <td className={estilo.tall}></td>
+            <td className={estilo.anch}></td>
+            <td className={estilo.lar}></td>
+        </tr>
+        <tr>
+            <td className={estilo.tall}></td>
+            <td className={estilo.anch}></td>
+            <td className={estilo.lar}></td>
+        </tr>
+    </table>
+      
     </div>
   )
 }
+
+
 const SeccionEnvios = () => {
   return (
     <div>
