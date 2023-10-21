@@ -43,10 +43,83 @@ const SeccionTallas = () => {
 }
 const SeccionEnvios = () => {
   return (
-    <div>
-      <h1>Seccion metodos de envio y pagos</h1>
-      {/* Aqui ira el codigo correscpondiente a quien le haya tocado */}
+    <>
+{/* Sección ENVIOS*/}
+
+<div className= {estilo.contenedorAcordeon}>
+       
+       <h2>ENVÍOS</h2>
+       
+       <div className={estilo.acordeon}>
+           <input type="radio" name="acordeon" id="btn-acordeon1" className= {estilo.btnAcordeon}/>
+           
+           <label for="btn-acordeon1"> &#9533;
+               ¿Cuántos días tarda mi pedido en llegar?
+           </label>
+           
+           <div className={estilo.contenidoAcordeon}>
+               <p>Plazo: 3 - 5 días laborales.</p>
+                <p>Los días puede varias dependiendo de tu código postal, el día y la hora de la compra. 
+                  Puedes apróximar la fecha de entrega una vez finalizando la compra el número de guía.</p>
+           </div>
+       </div>
+       
+       <div className={estilo.acordeon}>         
+        <input type="radio" name="acordeon" id="btn-acordeon2" className= {estilo.btnAcordeon}/>
+           
+        <label for="btn-acordeon2"> &#9533;
+            ¿Qué paquetería es la que ocupan?
+        </label>
+           
+        <div className={estilo.contenidoAcordeon}>
+            <p>DHL nos acompaña en la entrega de tu envío con el mejor servicio y tiempo. 
+              Es importante saber que DHL, puede variar con los dias hábiles de entrega, pero siempre puedes confiar 
+              con nostros ya que nos encargaremos de hacer llegar tu paquete hasta la puerta de tu hogar.</p>
+        </div>
     </div>
+       
+    <div className={estilo.acordeon}>
+        <input type="radio" name="acordeon" id="btn-acordeon3" className= {estilo.btnAcordeon}/>
+        
+        <label for="btn-acordeon3" >&#9533;
+            ¿Cómo puedo rastrear mi pedido?
+        </label>
+        
+        <div className={estilo.contenidoAcordeon}>
+            <p>En la página oficial de DHL, puedes encontrar la opción de "rastrear y envío" o bien, 
+              puedes escanear el QR que te lleva directo a la página.</p>
+        </div>
+    </div>
+       
+    <div className={estilo.acordeon}>
+        <input type="radio" name="acordeon" id="btn-acordeon4" className= {estilo.btnAcordeon}/>
+        
+        <label for="btn-acordeon4"> &#9533;
+            ¿Cuentan con cambios o reembolsos?
+        </label>
+        <div className={estilo.contenidoAcordeon}>
+            <p>No contamos con reembolsos o cambios.</p>
+            <p>Para evitar inconvenientes se les recomienda realizar la compra con cautela y revisar 
+              las medidas antes de seleccionar una talla.</p>
+              <img src="./img/qr.png" className = {estilo.imgQr}/> 
+        </div>
+    </div>
+       
+   </div>
+
+  {/* Sección Pagos */}
+      <div className={estilo.clasePagos}>
+        <h2>PAGOS </h2>
+        <br/>
+          <img src="./img/americanE.png" className={estilo.iconosPago}/>
+          <img src="./img/paypal.png" className={estilo.iconosPago}/>
+          <img src="./img/visa.png" className={estilo.iconosPago}/>
+          <img src="./img/mercadoPago.png" className={estilo.iconosPago}/>
+          <img src="./img/mastercard.png" className={estilo.iconosPago}/>
+          <img src="./img/oxxo.png" className={estilo.iconosPago}/>
+      </div>
+    </>
+
   )
 }
 const SeccionDevoluciones = () => {
