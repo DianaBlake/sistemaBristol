@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
-.ayuda{
+.ayuda {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     display: flex;
     justify-content: center;
@@ -62,21 +62,24 @@
 
 /* Estilos Pagos y Envios   DE RAUL */
 
-.contenedorAcordeon{
+.contenedorAcordeon {
     width: 40%;
     max-width: 800px;
     margin: auto;
     margin-top: 80px;
 }
-.contenedorAcordeon h2{
+
+.contenedorAcordeon h2 {
     text-align: center;
     font-size: 40px;
     margin-bottom: 35px;
 }
-.acordeon{
+
+.acordeon {
     background: #fff;
 }
-.acordeon label{
+
+.acordeon label {
     display: block;
     padding: 20px;
     font-size: 20px;
@@ -86,41 +89,131 @@
     margin-bottom: 2px;
     transition: all 300ms ease;
     border: 1px solid #393E46;
-   
+
 }
-.acordeon label:hover{
+
+.acordeon label:hover {
     background: #FEFBF3;
 }
-.acordeon .contenidoAcordeon{
+
+.acordeon .contenidoAcordeon {
     padding: 0px;
     margin: 0px 20px;
     max-height: 0px;
     overflow: hidden;
     transition: all 300ms ease;
 }
-.btnAcordeon:checked ~ .contenidoAcordeon{
+
+.btnAcordeon:checked~.contenidoAcordeon {
     max-height: 600px;
     padding: 15px 0px;
 }
-.btnAcordeon{
+
+.btnAcordeon {
     display: none;
 }
 
-.iconosPago{
+.iconosPago {
     width: 60px;
     height: 35px;
     margin: 10px;
 }
 
-.imgQr{
+.imgQr {
     width: 80px;
     height: 80px;
     text-align: center;
 }
 
-.clase-Pagos{
+.clase-Pagos {
     text-align: center;
-     text-align: center;
+    text-align: center;
     font-size: 25px;
     margin-bottom: 35px;
+}
+
+/*Seccion de tallas MELISSA*/
+
+.contenedorHeader {
+    display: flex;
+}
+
+.headerTitulos {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 200px;
+    padding-top: 80px;
+
+}
+
+.img {
+    height: 60px;
+    overflow: hidden;
+    padding-left: 250px;
+    padding-top: 100px;
+}
+
+.subtitulos {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.subtitulo {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 250px;
+    cursor: pointer;
+}
+
+.seleccionable:hover {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tablaEscondida {
+    display: none;
+    /* Oculta inicialmente las tablas */
+}
+
+.tablaMostrada {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    border-collapse: collapse;
+    border: 2px solid #000000;
+    margin-top: 50px;
+    margin-left: 285px;
+    margin-bottom: 80px;
+}
+
+.tall {
+    border: 2px solid #000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 55px;
+    padding-right: 55px;
+    font-size: 25px;
+}
+
+.anch {
+    border: 2px solid #000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 85px;
+    padding-right: 85px;
+    font-size: 25px;
+    /* Reduce el tamaño de fuente en las celdas de encabezado */
+}
+
+.lar {
+    border: 2px solid #000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 105px;
+    padding-right: 105px;
+    font-size: 25px;
+    /* Reduce el tamaño de fuente en las celdas de encabezado */
 }
