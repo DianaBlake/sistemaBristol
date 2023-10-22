@@ -1,7 +1,7 @@
 import React from "react";
 import { BsCart3 } from "react-icons/bs";
 import { CiUser, CiSearch } from "react-icons/ci";
-import logo from "../images/logo.jpg";
+import logo from "../images/Bristol-01.svg";
 import principal from "../estilos/principal.module.css";
 
 function Encabezado() {
@@ -10,7 +10,7 @@ function Encabezado() {
       <div className={principal.logos}>
         <img className={principal.imglogo} src={logo} width={150} />
         <div className={principal.iconos}>
-          <CiUser color="#050404" />
+          <CiUser color="#050404"/>
           <BsCart3 color="#050404" />
           <CiSearch color="#050404" />
         </div>

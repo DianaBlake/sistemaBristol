@@ -1,0 +1,37 @@
+.sliderontainer{
+    display: flex;
+}
+
+.slidercontainer{
+    display: flex;
+}
+
+.slider{
+    display: flex;
+    cursor: grab;
+}
+
+.item{
+    display: flex;
+    height: 9.5rem;
+    padding: 1rem;
+}
+
+.item img{
+    height: 100%;    
+    pointer-events: none;
+} 
+
+.navButton1 {
+    height: 12%;
+}
+  
+ .navButton2 {
+    height: 12%;
+}
+
+.SliderDiv{
+    display: flex;
+    justify-content: center;
+    background-color: #eeebe9;
+}
