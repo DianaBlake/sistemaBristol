@@ -6,7 +6,7 @@ import imagen from '../images/TiendasFisicas.png'
 
 const SeccionTiendas = () => {
   return (
-    <> <h1>Sección tiendas fisicas</h1>
+    <> 
     <div className={estilo.container}>
      
     <img src={imagen} alt="Imagen" className={estilo.imagen}></img>
@@ -14,16 +14,15 @@ const SeccionTiendas = () => {
      
       <div  className={estilo.contenido}>
      
-            <h1>BIENVENIDOS</h1>
+            <h1 className={estilo.tit}>BIENVENIDOS</h1>
             
-            <p className ={estilo.parrafo}>Por el momento no cuenta con tiendas<br></br>
-            fisicas. Las compras únicamente se pueden <br></br>
-            realzar de manera virtual. Estamos trabajando<br></br>
-            para poder abrir nuestra primer sucursal<br></br>
-            y esperamos pronto brindar un servicio<br></br>
-            en un establecimiento.<br></br>
-            ¡Gracias por tu comprensión y apoyo!
-            </p>
+            <p className ={estilo.parrafo}>Bristol por el momento no cuenta con tiendas
+            fisicas. Las compras únicamente se pueden
+            realzar de manera virtual. Estamos 
+            trabajando para poder abrir nuestra primer
+            sucursal y esperamos pronto brindar un 
+            servicio en un establecimiento.<br></br>
+            ¡Gracias por tu comprensión y apoyo!</p>
             
         </div>
       

@@ -45,14 +45,33 @@
   }
   
   .imagen {
-    width: 50vh;
-    margin: 2px ;
-  }
-  
+    width: 33%;
+    height: 30%; 
+    padding: 0 2%; 
+    margin: 2px;
+}
+
   .contenido {
     display: flex;
     flex-direction: column;
   }
+ 
+  .parrafo {
+    text-align: justify;
+    max-width: 300px; 
+    margin: 0 auto; 
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+.tit {
+    text-align: left; 
+    font-weight: normal; 
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+
+
+
   
   
   
