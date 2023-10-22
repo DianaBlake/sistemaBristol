@@ -1,15 +1,16 @@
 .principal{
     margin: 0;  
     padding: 0;   
-  }
+    margin-top: -3%;
+}
   
 .logos{
-    display: flex;
-    align-content: center;
     justify-content: space-between;
+    align-content: center;
+    margin-bottom: -30px;
     padding-inline:10vw;
     align-items: center;
-    margin-bottom: -30px;
+    display: flex;
 }
 
 .iconos{
@@ -27,11 +28,10 @@
 }
 
 .menu{
-    padding-inline:15vw;
-    /*Se quitan las viñetas */
-    display: flex;
-    font-size:x-large;
     justify-content: center;
+    padding-inline:10vw;
+    font-size:larger;
+    display: flex;
     gap: 3vw;
 }
 
@@ -41,20 +41,54 @@
 }
 
 .linea{
-    border: 1px solid #000; 
+    border: 0.1px solid #000; 
+    padding-inline:10%;
     width:64%;
 }
 
 .contenedor{
-    margin-top: 2%;
     padding-inline:15vw;
+    margin-top: 2%;
 }
 
 .img{   
-    padding-inline:8vw;
     justify-content: center;
-    width: 50vw;
+    padding-inline:13vw;
+    width: 40vw;
 }
+
+.Slider{
+    padding-inline:15vw;
+    justify-content: center;
+    background-color: #eeebe9;
+}
+
+.imgLema{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+}
+
+.bralette{
+    display: flex;
+    margin-top: 3%;
+    width: 40%;
+    padding-inline:5vw;
+}
+
+.Footer{
+    margin-top: 3%;
+
+}
+
+
+
+.Footer{
+    margin-top: 3%;
+
+}
+
+
 
 @keyframes sacudir {
     0% {

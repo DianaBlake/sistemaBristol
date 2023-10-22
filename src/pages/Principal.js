@@ -1,19 +1,37 @@
 import React from "react";
 import inicioP from "../images/inicioP.jpg";
+import ejemploS from "../images/ejemplo.jpeg";
 import principal from "../estilos/principal.module.css";
 import Encabezado from "../components/Encabezado";
+import Slider from "../components/Slider";
+import Footer from "../components/Footer";
 
 function Principal() {
   return (
     <div>
       <Encabezado> </Encabezado>
-{/** Hasta acá */}
+      {/** Hasta acá */}
 
       <div className={principal.contenedor}>
-         <img className={principal.img} src={inicioP} />
+        <img className={principal.img} src={inicioP} />
+      </div>
+
+      <div>
+        <Slider></Slider>
+      </div>
+
+      <div className={principal.imgLema}>
+        <img className={principal.bralette} src={ejemploS} />
+        <p>Bristol expresa amar cada curva donde
+        nace el arte y mueren los estereotipos.
+        </p>
+
       </div>
 
 
+      <div className={principal.Footer}>
+        <Footer></Footer>
+      </div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import { CiUser, CiSearch } from "react-icons/ci";
-import logo from "../images/logo.jpg";
+import logo from "../images/Bristol-01.svg";
 import principal from "../estilos/principal.module.css";
 import Carrito from "./Carrito";
 

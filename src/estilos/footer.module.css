@@ -7,19 +7,18 @@
     align-content: stretch;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 50px;
 }
 .footer h2{
     margin:0px;
-    font-size:xx-large;
-}
-.footer h3{
-    margin-block:10px;
+    font-size:x-large;
 }
 
 .seccionHorizontal{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    justify-content:space-between;
 }
