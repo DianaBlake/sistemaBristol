@@ -16,7 +16,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route>
-          <Route index element={<Sesion />} />
+          <Route index element={<Principal />} />
           <Route path="/ayuda" element={<Ayuda />} />
           <Route path="/conjuntos" element={<Conjuntos />} />
           <Route path="/bralettes" element={<Bralettes />} />
