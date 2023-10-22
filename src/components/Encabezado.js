@@ -16,7 +16,10 @@ const Encabezado = () => {
         <img className={principal.imglogo} src={logo} width={150} alt="Logo Bristol"/>
         <div className={principal.iconos}>
           <CiUser className={principal.iconoX}/>
-          <PiShoppingCartSimpleLight className={principal.iconoX} onClick={()=>{setCarshop(!carshop)}}/>
+          <PiShoppingCartSimpleLight className={principal.iconoX} onClick={()=>{
+            // setCarshop(!carshop)
+            window.location.href = "/orderpage"
+            }}/>
           <CiSearch className={principal.iconoX}/>
         </div>
       </div>
