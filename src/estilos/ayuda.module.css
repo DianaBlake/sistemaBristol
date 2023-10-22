@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
+* {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
 .ayuda {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     display: flex;
@@ -27,6 +31,7 @@
 }
 
 .SeccionArea {
+    justify-content: center;
     margin-inline: 10vw;
     border-style: solid;
     border-color: black;
@@ -46,19 +51,22 @@
 .container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 40px;
     padding-block: 60px;
 }
 
 .imagen {
-    width: 50vh;
-    margin: 2px;
+    width: 45vh;
+    object-fit: contain;
 }
 
 .contenido {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
+
 
 /* Estilos Pagos y Envios   DE RAUL */
 
@@ -134,43 +142,39 @@
 
 /*Seccion de tallas MELISSA*/
 
+/* .secTallas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
 .contenedorHeader {
     display: flex;
-}
-
-.headerTitulos {
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    padding-left: 200px;
-    padding-top: 80px;
-
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 .img {
-    height: 60px;
-    overflow: hidden;
-    padding-left: 250px;
-    padding-top: 100px;
+    font-size: 15vh;
+    padding-inline: 20px;
 }
 
 .subtitulos {
-
     display: flex;
-    flex-direction: row;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 }
 
 .subtitulo {
-    font-family: 'Zen Kaku Gothic New', sans-serif;
     text-align: center;
-    font-size: 30px;
-    padding-left: 250px;
+    font-size: xx-large;
     cursor: pointer;
 }
 
 .seleccionable:hover {
-    font-family: 'Zen Kaku Gothic New', sans-serif;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -181,39 +185,56 @@
 }
 
 .tablaMostrada {
-    font-family: 'Zen Kaku Gothic New', sans-serif;
+    table-layout: fixed;
     border-collapse: collapse;
     border: 2px solid #000000;
-    margin-top: 50px;
-    margin-left: 285px;
-    margin-bottom: 80px;
+    margin: 0 auto;
 }
 
-.tall {
+.tall,
+.anch,
+.lar {
     border: 2px solid #000;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 55px;
-    padding-right: 55px;
     font-size: 25px;
+    padding-inline: 15px;
 }
 
-.anch {
+/* .anch {
     border: 2px solid #000;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 85px;
-    padding-right: 85px;
     font-size: 25px;
-    /* Reduce el tamaño de fuente en las celdas de encabezado */
 }
 
 .lar {
     border: 2px solid #000;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 105px;
-    padding-right: 105px;
     font-size: 25px;
-    /* Reduce el tamaño de fuente en las celdas de encabezado */
+} */
+
+
+
+
+@media (max-width: 768px) {
+    .imagen {
+        width: 30vh;
+    }
+
+    .contenedorAcordeon {
+        width: 95%;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    .ayuda {
+        display: flexbox;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: center;
+        overflow-x: scroll;
+    }
+
+    .SeccionArea {
+        justify-content: center;
+        margin-inline: 1vw;
+        text-align: center;
+    }
 }

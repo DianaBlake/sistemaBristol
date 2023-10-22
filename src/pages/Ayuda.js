@@ -3,7 +3,7 @@ import estilo from '../estilos/ayuda.module.css'
 import Encabezado from '../components/Encabezado'
 import Footer from '../components/Footer'
 import imagen from '../images/TiendasFisicas.png'
-import regla from "../images/regla.PNG";
+import {LiaRulerHorizontalSolid} from 'react-icons/lia'
 const SeccionTiendas = () => {
   return (
     <>
@@ -42,12 +42,10 @@ const SeccionTallas = () => {
   };
 
   return (
-    <div>
+    <div className={estilo.secTallas}>
       <header className={estilo.contenedorHeader}>
-        <img className={estilo.img} src={regla} />
-        <div className={estilo.headerTitulos}>
-          <h1>GUÍA DE TALLAS</h1>
-        </div>
+        <LiaRulerHorizontalSolid className={estilo.img} />
+        <h1>GUÍA DE TALLAS</h1>
       </header>
       <div className={estilo.subtitulos}>
         <div className={estilo.subtitulo}>
