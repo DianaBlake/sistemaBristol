@@ -6,6 +6,7 @@ import Ayuda from './pages/Ayuda';
 import Conjuntos from './pages/Conjuntos';
 import Bralettes from './pages/Bralettes';
 import Novedades from './pages/Novedades';
+import AtencionAlCliente from './pages/AtencionAlCliente';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
           <Route path="/conjuntos" element={<Conjuntos />} />
           <Route path="/bralettes" element={<Bralettes />} />
           <Route path="/novedades" element={<Novedades />} />
+          <Route path="/atencionalcliente" element={<AtencionAlCliente />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

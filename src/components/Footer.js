@@ -17,7 +17,7 @@ function Footer() {
                 <h3>Coordinados</h3>
             </div>
             <div className={estilos.seccionVertical}>
-                <h2>Atención al cliente</h2>
+                <a href='/atención al cliente'>Atención al cliente</a>
                 <h3>Guía de tallas</h3>
                 <h3>Términos y condiciones</h3>
                 <h3>Tarjetas de regalo</h3>
