@@ -5,11 +5,12 @@ import Principal from './pages/Principal';
 import Ayuda from './pages/Ayuda';
 import Conjuntos from './pages/Conjuntos';
 import Bralettes from './pages/Bralettes';
-import Novedades from './pages/Novedades';
+import Panties from './pages/Panties';
 import Sesion from './pages/Sesion';
 import Contraseña from './pages/Contraseña';
 import Google from './components/Google';
 import OrderPage from './pages/OrderPage';
+import ProductoPage from './pages/ProductoPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,12 +21,12 @@ root.render(
           <Route path="/ayuda" element={<Ayuda />} />
           <Route path="/conjuntos" element={<Conjuntos />} />
           <Route path="/bralettes" element={<Bralettes />} />
-          <Route path="/novedades" element={<Novedades />} />
+          <Route path="/panties" element={<Panties />} />
           <Route path="/orderpage" element={<OrderPage />} />
           <Route path="/contraseña" element={<Contraseña />} />
           <Route path="/sesion" element={<Sesion />} />
           <Route path="/google" element={<Google />} />
-
+          <Route path="/producto/:codigo" element={<ProductoPage/>}/>
 
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>

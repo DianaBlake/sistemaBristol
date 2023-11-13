@@ -1,0 +1,123 @@
+.Productos{
+    padding-inline: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+.Producto{
+    width: 150px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.Producto:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.fotoProducto{
+    width: 80%;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+.modeloProducto{
+    margin: 0;
+    font-size: large;
+}
+.categoriaProducto{
+    margin: 0;
+    color: gray;
+    font-size: small;
+}
+.precioProducto{
+    margin: 0;
+    font-size: larger;
+}
+
+
+.ProductoIndividual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 60px;
+}
+
+.fotoIndividual img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.infoIndividual{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.codigoIndividual{
+    margin: 0;
+    color: gray;
+}
+
+.tituloIndividual{
+    font-size: 7vh;
+    margin: 0;
+}
+
+.categoriaIndividual{
+    margin: 0;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.descripcionIndividual{
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.precioIndividual{
+    margin: 0;
+    margin-bottom: 30px;
+    font-size:7vh;
+}
+.btnAgregar{
+    background-color: black;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .Producto{
+        width: 100px;
+        height: 200px;
+    }
+    Productos{
+        padding-inline: 1%;
+    }
+
+    .ProductoIndividual{
+        flex-direction: column;
+    }
+    
+    .fotoIndividual img{
+        width: 70vw;
+        height: 70vw;
+        object-fit: cover;
+    }
+
+    .infoIndividual{
+        width: 100%;
+        text-align: justify;
+    }
+    
+}

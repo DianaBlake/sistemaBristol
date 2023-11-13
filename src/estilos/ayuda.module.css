@@ -224,7 +224,6 @@
     }
 
     .ayuda {
-        display: flexbox;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: start;

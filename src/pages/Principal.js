@@ -7,13 +7,14 @@ import Slider from "../components/Slider";
 import Footer from "../components/Footer";
 
 function Principal() {
+
+  
   return (
     <div>
       <Encabezado> </Encabezado>
       {/** Hasta acá */}
-
       <div className={principal.contenedor}>
-        <img className={principal.img} src={inicioP} />
+        <img className={principal.img} src={inicioP} alt="Imagen de referencia"/>
       </div>
 
       <div>
@@ -21,7 +22,7 @@ function Principal() {
       </div>
 
       <div className={principal.imgLema}>
-        <img className={principal.bralette} src={ejemploS} />
+        <img className={principal.bralette} src={ejemploS} alt="Imagen de referencia" />
         <p>Bristol expresa amar cada curva donde
         nace el arte y mueren los estereotipos.
         </p>
