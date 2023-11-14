@@ -1,0 +1,18 @@
+.App {
+text-align:justify;
+  border: 1px solid #5f6368; 
+  max-width: 1200px; 
+  margin: 20px auto;  
+  padding: 20px; 
+  }
+
+  .sub{
+    font-size:larger;
+    color:#5f6368;
+  }
+  .terminosContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size:larger;
+  }
