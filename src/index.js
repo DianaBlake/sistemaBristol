@@ -6,12 +6,13 @@ import Ayuda from './pages/Ayuda';
 import Conjuntos from './pages/Conjuntos';
 import Bralettes from './pages/Bralettes';
 import Novedades from './pages/Novedades';
-import Sesion from './pages/Sesion';
 import Contraseña from './pages/Contraseña';
 import Google from './components/Google';
 import OrderPage from './pages/OrderPage';
+import InicioSesion from './components/InicioSesion';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
     <BrowserRouter>
       <Routes>
@@ -23,7 +24,7 @@ root.render(
           <Route path="/novedades" element={<Novedades />} />
           <Route path="/orderpage" element={<OrderPage />} />
           <Route path="/contraseña" element={<Contraseña />} />
-          <Route path="/sesion" element={<Sesion />} />
+          <Route path="/InicioSesion" element={<InicioSesion />} />
           <Route path="/google" element={<Google />} />
 
 

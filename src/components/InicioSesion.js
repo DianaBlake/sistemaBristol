@@ -1,10 +1,10 @@
 import React from "react";
 import session from "../estilos/session.module.css";
 import logo from "../images/Bristol-01.svg";
-import { AiFillGoogleCircle } from "react-icons/ai";
-import Footer from "../components/Footer";
-import Google from "../components/Google";
-function Sesion() {
+import Footer from "./Footer";
+import Google from "./Google";
+
+const Sesion=() =>{
   return (
     <div>
       <div className={session.logos}>
@@ -15,8 +15,8 @@ function Sesion() {
 
       <div className={session.cuadro}>
         <p className={session.titulo}>INICIA SESIÓN</p>
-        <input className={session.input1}></input>
-        <input for="name" className={session.input2}></input>
+        <input className={session.input1}/>
+        <input for="name" className={session.input2}/>
         <a href="/contraseña" className={session.contraseña}>
           ¿Olvidaste tu contraseña?
         </a>

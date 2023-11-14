@@ -81,12 +81,97 @@
 
 }
 
-
-
 .Footer{
     margin-top: 3%;
 
 }
+
+.bolsaBristolimg{
+    display: flex;
+    padding-inline: 6vw;
+    width: 40vw;
+    margin-top: 7%;
+}
+
+.divMorral{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.etiquetaP{
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+.tituloMorral{
+    margin-top: 65%;
+    font-size: xx-large;
+    
+}
+
+.terminos{
+    margin-top: -7%;
+    left: 80%;
+}
+
+
+.contenedorDescubremas{
+    margin-top: 10%;
+    padding-inline:2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:30px;
+    gap: -20px;
+}
+
+.descubremas {
+    display: flex;
+}
+
+.descubremas img{
+    height: 30vw;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+.menuimagenes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.overlay {
+    display: flex;
+    position: relative;
+    top:-30%;
+    left: -50%;
+    align-items: center;
+    
+}
+
+
+.btnropa {
+    font-size: 16px;
+    border: none;
+    background-color:#bdbdbd;
+    color: black;
+    border-radius: 5px;
+    padding: 17px 30px;
+}
+
+
+
+.btnropa:hover button {
+    opacity: 0.2;
+}
+  
+.btnropa:hover .overlay {
+    opacity: 1;
+}
+  
+
+
 
 
 
