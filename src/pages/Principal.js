@@ -8,13 +8,14 @@ import Slider from "../components/Slider";
 import Footer from "../components/Footer";
 
 function Principal() {
+
+  
   return (
     <div>
       <Encabezado> </Encabezado>
       {/** Hasta acá */}
-
       <div className={principal.contenedor}>
-        <img className={principal.img} src={inicioP} />
+        <img className={principal.img} src={inicioP} alt="Imagen de referencia"/>
       </div>
 
       <div>

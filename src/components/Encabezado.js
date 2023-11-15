@@ -26,7 +26,10 @@ const Encabezado = () => {
             <CiUser onClick={()=>{window.location.href="/InicioSesion"}}/>
           </div>
 
-          <PiShoppingCartSimpleLight className={principal.iconoX} onClick={()=>{setCarshop(!carshop)}}/>
+          <PiShoppingCartSimpleLight className={principal.iconoX} onClick={()=>{
+            // setCarshop(!carshop)
+            window.locxation.href = "/orderpage"
+            }}/>
           <CiSearch className={principal.iconoX}/>
         </div>
       </div>
@@ -41,9 +44,9 @@ const Encabezado = () => {
       <div className={principal.menu}>
         <a href="/">INICIO</a>
         <a href="/ayuda">AYUDA</a>
-        <a href="/">CONJUNTOS</a>
-        <a href="/">BRALETTES</a>
-        <a href="/">NOVEDADES</a>
+        <a href="/conjuntos">CONJUNTOS</a>
+        <a href="/bralettes">BRALETTES</a>
+        <a href="/panties">PANTIES</a>
       </div>
 
       <hr className={principal.linea} />

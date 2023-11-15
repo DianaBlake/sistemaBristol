@@ -4,17 +4,17 @@ import Footer from '../components/Footer'
 import estilo from '../estilos/principal.module.css'
 import ProductsComp from '../components/ProductsComp'
 
-function Bralettes() {
+function Panties() {
   return (
     <>
     <Encabezado/>
-    <p className={estilo.Titulo}>Bralettes</p>
-    {
-      ProductsComp('Bralette')
-    }
+    <p className={estilo.Titulo}>Panties</p>
+      {
+        ProductsComp('Pantie')
+      }
     <Footer/>
     </>
   )
 }
 
-export default Bralettes
+export default Panties
