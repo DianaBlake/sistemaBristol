@@ -9,7 +9,6 @@ import Panties from './pages/Panties';
 import Contraseña from './pages/Contraseña';
 import Google from './components/Google';
 import OrderPage from './pages/OrderPage';
-import Novedades from './pages/Novedades';
 import ProductoPage from './pages/ProductoPage';
 import InicioSesion from './components/InicioSesion';
 

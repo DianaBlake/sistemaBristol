@@ -28,7 +28,7 @@ const Encabezado = () => {
 
           <PiShoppingCartSimpleLight className={principal.iconoX} onClick={()=>{
             // setCarshop(!carshop)
-            window.locxation.href = "/orderpage"
+            window.location.href = "/orderpage"
             }}/>
           <CiSearch className={principal.iconoX}/>
         </div>
