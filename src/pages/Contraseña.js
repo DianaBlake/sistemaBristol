@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import contraseña from "../estilos/contraseña.module.css";
 import logo from "../images/Bristol-01.svg";
 
+
 const PasswordRecovery = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -65,7 +66,7 @@ const PasswordRecovery = () => {
             Correo electrónico: 
             <input type="email" value={email} onChange={handleEmailChange} />
           <button className={contraseña.btnEnviar} type="submit">Enviar solicitud</button>
-          <a className={contraseña.Volver} href="/sesion">Volver a Bristol</a>
+          <a className={contraseña.Volver} href="/InicioSesion">Volver a Bristol</a>
           </label> 
 
           <p>{message}</p>

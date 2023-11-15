@@ -6,10 +6,7 @@ import principal from "../estilos/principal.module.css";
 import Encabezado from "../components/Encabezado";
 import Slider from "../components/Slider";
 import Footer from "../components/Footer";
-import bragas from "../images/bragas.jpg";
-import bralette from "../images/brasier.jpg";
-import brasieres from "../images/brasieres.jpg";
-import coordinado from "../images/coordinados.jpg";
+
 function Principal() {
   return (
     <div>

@@ -22,8 +22,8 @@ const Encabezado = () => {
         <img className={principal.imglogo} src={logo} width={150} alt="Logo Bristol"/>
         <div className={principal.iconos}>
 
-        <div className={principal.iconoX} onClick={handleInicioSesionClick}>
-            <CiUser />
+        <div className={principal.iconoX}>
+            <CiUser onClick={()=>{window.location.href="/InicioSesion"}}/>
           </div>
 
           <PiShoppingCartSimpleLight className={principal.iconoX} onClick={()=>{setCarshop(!carshop)}}/>
@@ -39,7 +39,7 @@ const Encabezado = () => {
       }
 
       <div className={principal.menu}>
-        <a href="">INICIO</a>
+        <a href="/">INICIO</a>
         <a href="/ayuda">AYUDA</a>
         <a href="/">CONJUNTOS</a>
         <a href="/">BRALETTES</a>
