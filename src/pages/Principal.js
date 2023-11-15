@@ -51,49 +51,44 @@ function Principal() {
       {/** DESCUBRE MÁS*/}
       {/** Primera imagen*/}
 
+      <div className={principal.divDescubre}>
+    <h1 className={principal.h1descubremas}>DESCUBRE MÁS</h1>
+      </div>
+
       <div className={principal.contenedorDescubremas}>
         
-        <div className={principal.descubremas}>
+        <div className={principal.descubremas1}>
           <div className={principal.menuimagenes}>
-          <button className={principal.btnropa}> Panties </button>
+          <button className={principal.btnropa}> PANTIES </button>
           </div>
 
         </div>
 
         {/** Segunda imagen*/}
-
-        <div className={principal.descubremas}>
+        <div className={principal.descubremas2}>
           <div className={principal.menuimagenes}>
-            <img className={principal.descubreimg1} src={brasieres} />
+          <button className={principal.btnropa}> BRASIERES </button>
           </div>
 
-          <div className={principal.overlay}>
-            <button className={principal.btnropa}> Brasieres </button>
-          </div>
         </div>
+
 
         {/** Tecer imagen*/}
 
-        <div className={principal.descubremas}>
+        <div className={principal.descubremas3}>
           <div className={principal.menuimagenes}>
-            <img className={principal.descubreimg1} src={bralette} />
+          <button className={principal.btnropa}> BRALETTES </button>
           </div>
 
-          <div className={principal.overlay}>
-            <button className={principal.btnropa}> Bralettes </button>
-          </div>
         </div>
 
         {/** Cuarta imagen*/}
 
-        <div className={principal.descubremas}>
+        <div className={principal.descubremas4}>
           <div className={principal.menuimagenes}>
-            <img className={principal.descubreimg1} src={coordinado} />
+          <button className={principal.btnropa}> COORDINADOS </button>
           </div>
 
-          <div className={principal.overlay}>
-            <button className={principal.btnropa}> Coordinados </button>
-          </div>
         </div>
       </div>
 

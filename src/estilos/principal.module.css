@@ -91,6 +91,7 @@
     padding-inline: 6vw;
     width: 40vw;
     margin-top: 7%;
+    margin-bottom: 3%;
 }
 
 .divMorral{
@@ -122,18 +123,49 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom:30px;
-    gap: -20px;
+    gap: 20px;
+    
 }
 
-.descubremas {
+.descubremas1 {
+    background-image: url("../images/bragas.jpg");
+    width: 400px;
+    height: 600px;
+    align-items: center;
     display: flex;
+    justify-content: center;
+    border-radius: 2%;
+    
 }
 
-.descubremas img{
-    height: 30vw;
-    width: 20vw;
-    border-radius: 10px;
+.descubremas2 {
+    background-image: url("../images/brasieres.jpg");
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 2%;
+}
+
+.descubremas3 {
+    background-image: url("../images/brasier.jpg");
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 2%;
+}
+
+.descubremas4 {
+    background-image: url("../images/coordinados.jpg");
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 2%;
 }
 
 .menuimagenes{
@@ -154,23 +186,33 @@
 .btnropa {
     font-size: 16px;
     border: none;
-    background-color:#bdbdbd;
-    color: black;
+    background-color:#3c3c3c;
+    color: white;
     border-radius: 5px;
     padding: 17px 30px;
 }
 
 
 
-.btnropa:hover button {
-    opacity: 0.2;
+.btnropa:hover  {
+    opacity: 1;
+    background-color: #bdbdbd;
+    color: #000;
 }
   
 .btnropa:hover .overlay {
     opacity: 1;
 }
   
+.h1descubremas{
+    text-decoration: none;
+    margin-bottom: -80px;
+    margin-inline: 45px;
+    color:#5f6368;
+    font-size:340%;
+    margin-bottom: -8%;
 
+}
 
 
 
