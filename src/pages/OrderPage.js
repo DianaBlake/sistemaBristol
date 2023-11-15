@@ -15,29 +15,33 @@ function getCookie(name) {
       return decodeURIComponent(parts[1]);
     }
   }
-
   return undefined;
 }
 
 
 function totalPedido(data) {
   let total = 0;
-  data.map((parametro) => (
+  data.map((parametro) => {
+    // console.log(parametro.idPedido);
     parametro.articulos.map((articulo) => (
       total = total + (articulo.precio * articulo.cantidad)
     ))
-  ));
+  });
   return total
 }
 
 function OrderPage() {
 
-  // const expires = new Date(Date.now() + (1000 * 60 * 60 * 24)); // 24 horas
-  // document.cookie = `username=${"alexloga2001@gmail.com"}; expires=${expires.toUTCString()}; path=/`;
+  const expires = new Date(Date.now() + (1000 * 60 * 60 * 24)); // 24 horas
+  document.cookie = `username=${"usuario2@gmail.com"}; expires=${expires.toUTCString()}; path=/`;
+  document.cookie = `carrito=${3}; expires=${expires.toUTCString()}; path=/`;
+  
 
   const { data } = useFetch("https://app-bristol-nsqoxt2oxq-uc.a.run.app/UsuarioPedidos?correo=" + getCookie("username") + "&estado=0")
 
   const totalCuenta = totalPedido(data)
+
+  console.log(getCookie("carrito"));
 
   const CarritoTabla = () => {
 
@@ -55,13 +59,14 @@ function OrderPage() {
                   <div>
                     <p className={estilo.Producto}>{articulo.modelo}</p>
                     <p className={estilo.Categoria}>{articulo.categoria}</p>
+                    <p className={estilo.Categoria}>{articulo.talla}</p>
                     <p className={estilo.Talla}>{articulo.nombre}</p>
                   </div>
                 </div>
                 <div className={estilo.celdaCantidad}>
-                  <BsPlusSquare />
-                  <p className={estilo.Producto}>{articulo.cantidad}</p>
                   <BsDashSquare />
+                  <p className={estilo.Producto}>{articulo.cantidad}</p>
+                  <BsPlusSquare />
                 </div>
                 <div className={estilo.celdaPrecio}>
                   <p className={estilo.Producto}>${articulo.precio * articulo.cantidad}</p>

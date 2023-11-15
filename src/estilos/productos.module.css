@@ -72,13 +72,12 @@
 
 .categoriaIndividual{
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     color: gray;
 }
 
 .descripcionIndividual{
     margin: 0;
-    margin-bottom: 30px;
 }
 
 .precioIndividual{
@@ -92,6 +91,42 @@
     padding: 10px 0px 10px 0px;
     text-align: center;
     cursor: pointer;
+}
+
+.cantidad{
+    height: 40px;
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.talla{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.opcTalla{
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.opcTallaSelected{
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.opcTalla:hover{
+    background-color: black;
+    color: white;
 }
 
 
