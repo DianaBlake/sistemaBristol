@@ -21,27 +21,30 @@ function getCookie(name) {
 
 function totalPedido(data) {
   let total = 0;
+  var valores = []
   data.map((parametro) => {
     // console.log(parametro.idPedido);
-    parametro.articulos.map((articulo) => (
+    valores.push(parametro.idPedido)
+    parametro.articulos.map((articulo) => {
       total = total + (articulo.precio * articulo.cantidad)
-    ))
+    })
   });
-  return total
+  valores.push(total)
+  // console.log(valores);
+  return valores
 }
 
 function OrderPage() {
 
   const expires = new Date(Date.now() + (1000 * 60 * 60 * 24)); // 24 horas
   document.cookie = `username=${"usuario2@gmail.com"}; expires=${expires.toUTCString()}; path=/`;
-  document.cookie = `carrito=${3}; expires=${expires.toUTCString()}; path=/`;
   
 
   const { data } = useFetch("https://app-bristol-nsqoxt2oxq-uc.a.run.app/UsuarioPedidos?correo=" + getCookie("username") + "&estado=0")
 
   const totalCuenta = totalPedido(data)
 
-  console.log(getCookie("carrito"));
+  // console.log(getCookie("carrito"));
 
   const CarritoTabla = () => {
 
@@ -114,7 +117,7 @@ function OrderPage() {
               <p className={estilo.textoNormalIZQ}>Envío: </p>
               <p className={estilo.textoNormalDER}>ENV</p>
             </div>
-            <p className={estilo.tituloSecundario}>TOTAL: ${totalCuenta}</p>
+            <p className={estilo.tituloSecundario}>TOTAL: ${totalCuenta[1]}</p>
             <button type="" className={estilo.botonPago}>REALIZAR COMPRA</button>
           </div>
         </div>

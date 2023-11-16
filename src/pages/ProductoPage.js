@@ -6,28 +6,27 @@ import estilo from '../estilos/productos.module.css'
 import { useFetch } from "../Controllers/useFetch";
 import { BsPlusSquare, BsDashSquare } from 'react-icons/bs'
 import axios from "axios";
+import { GetIdPedido } from "../Controllers/UserControler";
 
 
 
 
-const GetPedido = () =>{
-    function getCookie(name) {
-        const cookies = document.cookie.split(";");
+// const GetPedido = () =>{
+//     function getCookie(name) {
+//         const cookies = document.cookie.split(";");
       
-        for (const cookie of cookies) {
-          const parts = cookie.split("=");
+//         for (const cookie of cookies) {
+//           const parts = cookie.split("=");
       
-          if (parts[0] === name) {
-            return decodeURIComponent(parts[1]);
-          }
-        }
-      
-        return undefined;
-      }
-//   const { data } = useFetch("https://app-bristol-nsqoxt2oxq-uc.a.run.app/UsuarioPedidos?correo=" + getCookie("username") + "&estado=0")
-    // console.log(data);
-    console.log(getCookie("carrito"));
-}
+//           if (parts[0] === name) {
+//             return decodeURIComponent(parts);
+//           }
+//         }
+//       }
+// //   const { data } = useFetch("https://app-bristol-nsqoxt2oxq-uc.a.run.app/UsuarioPedidos?correo=" + getCookie("username") + "&estado=0")
+//     // console.log(data);
+//     console.log(getCookie("username2"));
+// }
 
 
 function ProductoPage() {
@@ -50,16 +49,18 @@ function ProductoPage() {
 
     
     
+    const idPedido = GetIdPedido()
     
     async function AgregarCarrito(modelo, cantidad, talla) {
 
         // let idPedido = getCookie("carrito")
 
         // console.log(getCookie("carritos"));
+
         
         await axios({
             method: 'POST', url: 'https://app-bristol-nsqoxt2oxq-uc.a.run.app/Articulos', data: {
-                idPedido: 3,
+                idPedido: idPedido[0],
                 modelo: modelo,
                 cantidad: cantidad,
                 talla: talla,
