@@ -36,9 +36,9 @@ function Footer() {
             <div className={estilos.seccionVertical}>
                 <h2>CONTÁCTANOS</h2>
                 <div className={estilos.seccionHorizontal}>
-                    <BsFacebook size={30}/>
-                    <BsInstagram size={30}/>
-                    <BsFillTelephoneFill size={30}/>
+                    <a href='https://www.facebook.com/profile.php?id=100064068821743'> <BsFacebook size={30} color='black'/> </a>
+                    <a href='https://www.instagram.com/bristol_mx/'> <BsInstagram size={30} color='black'/> </a>
+                    <a href="https://wa.me/7341573029"> <BsFillTelephoneFill size={30} color='black'/>  </a>
                 </div>
             </div>
         </div>

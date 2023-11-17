@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import estilo from '../estilos/ayuda.module.css'
 import Encabezado from '../components/Encabezado'
-import Footer from '../components/Footer'
 import imagen from '../images/TiendasFisicas.png'
 import {LiaRulerHorizontalSolid} from 'react-icons/lia'
 const SeccionTiendas = () => {
@@ -19,7 +18,7 @@ const SeccionTiendas = () => {
 
           <p className={estilo.parrafo}>Por el momento no cuenta con tiendas<br></br>
             fisicas. Las compras únicamente se pueden <br></br>
-            realzar de manera virtual. Estamos trabajando<br></br>
+            realizar de manera virtual. Estamos trabajando<br></br>
             para poder abrir nuestra primer sucursal<br></br>
             y esperamos pronto brindar un servicio<br></br>
             en un establecimiento.<br></br>
