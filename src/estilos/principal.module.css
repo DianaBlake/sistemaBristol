@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-content: center;
     margin-bottom: -30px;
+    margin-top: 50px;
     padding-inline:10vw;
     align-items: center;
     display: flex;
@@ -18,6 +19,7 @@
 
 .iconos{
     display: flex;
+    align-items: center;
     font-size: 2em;
     gap: 3vw;
 }
@@ -223,6 +225,12 @@
 
 }
 
+
+@media (max-width: 768px) {
+    .logos{
+        margin-top: 0;
+    }
+}
 
 
 
