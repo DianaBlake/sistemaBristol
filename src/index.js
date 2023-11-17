@@ -11,6 +11,7 @@ import Contraseña from './pages/Contraseña';
 import Google from './components/Google';
 import OrderPage from './pages/OrderPage';
 import Terminos from './pages/Terminos';
+import Cuenta from './pages/Cuenta';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
@@ -26,7 +27,7 @@ root.render(
           <Route path="/sesion" element={<Sesion />} />
           <Route path="/google" element={<Google />} />
           <Route path="/terminos" element={<Terminos />} />
-
+          <Route path="/cuenta" element={<Cuenta />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

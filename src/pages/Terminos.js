@@ -1,11 +1,15 @@
 import React from 'react';
 import estilo from "../estilos/terminos.module.css";
+import Footer from "../components/Footer";
+import logo from "../images/Bristol-01.svg";
 
 function Terminos() {
   return (
-    <div className={estilo.App}>
+    <>
+     <div className={estilo.App}>
       <header className={estilo.AppHeader}>
-        <h1>Terminos y Condiciones</h1>
+        <img className={estilo.imglogo} src={logo} width={150} alt="Logo Bristol"/>
+        <h1>Terminos y Condiciones</h1></header>
           <h3 className={estilo.sub}>1. Premio </h3>
           <p>Al ingresar y utilizar este portal de Internet, cuyo nombre de dominio es www.bristol.com propiedad de Bristol S.A. de C.V., que en lo sucesivo se denominará Bristol S.A. de C.V., el usuario está aceptando los TÉRMINOS Y CONDICIONES DE USO contenidos en este convenio y declara expresamente su aceptación utilizando para tal efecto medios electrónicos, en términos de lo dispuesto por el artículo 1803 del Código Civil Federal. 
             En caso de no aceptar en forma absoluta y completa los términos y condiciones de este convenio, el usuario deberá abstenerse de acceder, utilizar y observar el sitio web www.ilusion.com
@@ -27,8 +31,11 @@ function Terminos() {
           <h3 className={estilo.sub}>5. Formatos</h3>
           <p>Los usuarios reconocen que, al proporcionar la información de carácter personal requerida en alguno de los servicios que se prestan en este sitio web, otorgan a Diltex S.A. de C.V. la autorización señalada en el artículo 109 de la Ley Federal del Derecho de Autor. En todos los casos, los usuarios responderán por la veracidad de la información proporcionada a Bristol S.A. de C.V.
             Asimismo, para la prestación de servicios, el usuario se obliga además a aceptar los términos y condiciones estipulados para tal efecto.</p>
-      </header>
+      
     </div>
+    <Footer></Footer>
+    </>
+   
   );
 }
 

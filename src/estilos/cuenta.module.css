@@ -1,0 +1,88 @@
+/* CrearCuenta.css */
+.CrearCuenta {
+  max-width: 400px;
+  height: 600px;
+  margin: 40px auto 20px; /* Updated margin to provide space at the top */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: larger;
+  position: relative; /* Added position relative for absolute positioning */
+}
+
+.imglogo {
+  position: absolute; /* Position the logo absolutely within the .CrearCuenta div */
+  top: 0;
+  left: 140px;
+  
+}
+
+.Header {
+  text-align: center;
+  margin-top: 80px; /* Adjusted margin-top to create space below the logo */
+}
+
+h2 {
+  color: #333;
+  padding-top: 30px;
+  font-size: 37px;
+}
+
+
+.CrearCuenta label {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+}
+
+.CrearCuenta input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.Boton {
+  margin-top: 40px;
+  padding-top: 25px;
+  border-top: 1px #484747 solid;
+}
+
+
+.boton {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.CrearCuenta button:hover {
+  background-color: #161717;
+}
+
+.Google {
+  padding-top: 10px;
+}
+
+.google {
+  width: 100%;
+  padding-top: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  color: #000000;
+  border: 1px #000000 solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Google button:hover {
+  background-color: gray
+  
+}

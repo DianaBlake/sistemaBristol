@@ -6,12 +6,29 @@ text-align:justify;
   padding: 20px; 
   }
 
+
+.AppHeader {
+  display: flex; 
+  align-items: center; 
+  padding: 5px;
+  background-color: #ffff; 
+}
+
+.imglogo {
+  margin-right: 10px; }
+
+h1 {
+  margin-left: 260px;
+  text-align: center;
+}
+
   .sub{
     font-size:larger;
     color:#5f6368;
+    
   }
   .terminosContainer {
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: justify;
     font-size:larger;
