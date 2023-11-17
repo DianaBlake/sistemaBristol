@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Encabezado from '../components/Encabezado'
 import estilo from '../estilos/orders.module.css'
 import { BsPlusSquare, BsDashSquare } from 'react-icons/bs'
 import Footer from '../components/Footer'
-import { useFetch } from '../Controllers/useFetch'
+import useFetch, { aumentarCantidad, reducirCantidad } from '../Controllers/useFetch'
 
 function getCookie(name) {
   const cookies = document.cookie.split(";");
@@ -23,7 +23,7 @@ function totalPedido(data) {
   let total = 0;
   var valores = []
   data.map((parametro) => {
-    // console.log(parametro.idPedido);
+    console.log(parametro.idPedido);
     valores.push(parametro.idPedido)
     parametro.articulos.map((articulo) => {
       total = total + (articulo.precio * articulo.cantidad)
@@ -35,6 +35,7 @@ function totalPedido(data) {
 }
 
 function OrderPage() {
+
 
   const expires = new Date(Date.now() + (1000 * 60 * 60 * 24)); // 24 horas
   document.cookie = `username=${"usuario2@gmail.com"}; expires=${expires.toUTCString()}; path=/`;
@@ -67,9 +68,15 @@ function OrderPage() {
                   </div>
                 </div>
                 <div className={estilo.celdaCantidad}>
-                  <BsDashSquare />
+                  <BsDashSquare onClick={()=>{
+                    reducirCantidad(articulo.idArticulos)
+                    window.location.reload();
+                    }}/>
                   <p className={estilo.Producto}>{articulo.cantidad}</p>
-                  <BsPlusSquare />
+                  <BsPlusSquare onClick={()=>{
+                    aumentarCantidad(totalCuenta[0], articulo.codigoProducto, articulo.talla, 1)
+                    window.location.reload();
+                    }}/>
                 </div>
                 <div className={estilo.celdaPrecio}>
                   <p className={estilo.Producto}>${articulo.precio * articulo.cantidad}</p>

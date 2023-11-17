@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useFetch } from "./useFetch";
+import useFetch from "./useFetch";
 
 function getCookie(name) {
   const cookies = document.cookie.split(";");

@@ -1,6 +1,6 @@
 import React from 'react'
 import estilos from "../estilos/productos.module.css"
-import { useFetch } from '../Controllers/useFetch';
+import useFetch from '../Controllers/useFetch';
 
 function ProductsComp(categoria) {
   // const [productos, setProductos] = useState([])

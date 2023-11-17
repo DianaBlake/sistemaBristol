@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Encabezado from "../components/Encabezado";
 import Footer from "../components/Footer";
 import estilo from '../estilos/productos.module.css'
-import { useFetch } from "../Controllers/useFetch";
+import useFetch from "../Controllers/useFetch";
 import { BsPlusSquare, BsDashSquare } from 'react-icons/bs'
 import axios from "axios";
 import { GetIdPedido } from "../Controllers/UserControler";
